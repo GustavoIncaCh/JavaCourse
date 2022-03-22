@@ -22,7 +22,7 @@ function getUserCoin(cointype){
             cantidad = prompt("Ingresar cantidad de Bitcoin");
             /// si el usuario ingreso un valor no Numerico, QUE NO SEA FRACCION
             /// funciona tambien si el usuario ingresa 0, que es una cantidad nula
-            if (!parseFloat(cantidad)){
+            if (!parseFloat(cantidad)||cantidad<0.0){
                 /// llamamos a nuestra funcion de alerta
                 invalidAlert()
                 break
@@ -40,7 +40,7 @@ function getUserCoin(cointype){
             /// este caso se repite en cada caso
         case "ETH":
             cantidad = prompt("Ingresar cantidad de Etherium");
-            if (!parseFloat(cantidad)){
+            if (!parseFloat(cantidad)||cantidad<0.0){
                 invalidAlert()
                 break
             }
@@ -50,7 +50,7 @@ function getUserCoin(cointype){
             break;
         case "DASH":
             cantidad = prompt("Ingresar cantidad de Dash");
-            if (!parseFloat(cantidad)){
+            if (!parseFloat(cantidad)||cantidad<0.0){
                 invalidAlert()
                 break
             }
@@ -60,7 +60,7 @@ function getUserCoin(cointype){
             break;
         case "SYS":
             cantidad = prompt("Ingresar cantidad de Syscoin");
-            if (!parseFloat(cantidad)){
+            if (!parseFloat(cantidad)||cantidad<0.0){
                 invalidAlert()
                 break
             }
@@ -70,7 +70,7 @@ function getUserCoin(cointype){
             break;
         case "FIL":
             cantidad = prompt("Ingresar cantidad de Filecoin");
-            if (!parseFloat(cantidad)){
+            if (!parseFloat(cantidad)||cantidad<0.0){
                 invalidAlert()
                 break
             }
@@ -80,7 +80,7 @@ function getUserCoin(cointype){
             break;
         case "LTC":
             cantidad = prompt("Ingresar cantidad de Litecoin");
-            if (!parseFloat(cantidad)){
+            if (!parseFloat(cantidad)||cantidad<0.0){
                 invalidAlert()
                 break
             }
@@ -90,7 +90,7 @@ function getUserCoin(cointype){
             break;
         case "GRS":
             cantidad = prompt("Ingresar cantidad de Groestlcoin");
-            if (!parseFloat(cantidad)){
+            if (!parseFloat(cantidad)||cantidad<0.0){
                 invalidAlert()
                 break
             }
