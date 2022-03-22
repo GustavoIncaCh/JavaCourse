@@ -15,8 +15,8 @@ function getUserCoin(cointype){
             /// obtenemos la cantidad de moneda en "cantidad", tratamos de recibir facciones
             /// de moneda por la valuacion de la criptomoneda: Ejem: 0.000058 BTC
             cantidad = prompt("Ingresar cantidad de Bitcoin");
-            /// si el usuario ingreso un valor no Numerico
-            if (!parseInt(cantidad)){
+            /// si el usuario ingreso un valor no Numerico, QUE NO SEA FRACCION
+            if (!parseFloat(cantidad)){
                 alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
                 break
             }
@@ -33,7 +33,7 @@ function getUserCoin(cointype){
             /// este caso se repite en cada caso
         case "ETH":
             cantidad = prompt("Ingresar cantidad de Etherium");
-            if (!parseInt(cantidad)){
+            if (!parseFloat(cantidad)){
                 alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
                 break
             }
@@ -43,7 +43,7 @@ function getUserCoin(cointype){
             break;
         case "DASH":
             cantidad = prompt("Ingresar cantidad de Dash");
-            if (!parseInt(cantidad)){
+            if (!parseFloat(cantidad)){
                 alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
                 break
             }
@@ -53,7 +53,7 @@ function getUserCoin(cointype){
             break;
         case "SYS":
             cantidad = prompt("Ingresar cantidad de Syscoin");
-            if (!parseInt(cantidad)){
+            if (!parseFloat(cantidad)){
                 alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
                 break
             }
@@ -63,7 +63,7 @@ function getUserCoin(cointype){
             break;
         case "FIL":
             cantidad = prompt("Ingresar cantidad de Filecoin");
-            if (!parseInt(cantidad)){
+            if (!parseFloat(cantidad)){
                 alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
                 break
             }
@@ -73,7 +73,7 @@ function getUserCoin(cointype){
             break;
         case "LTC":
             cantidad = prompt("Ingresar cantidad de Litecoin");
-            if (!parseInt(cantidad)){
+            if (!parseFloat(cantidad)){
                 alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
                 break
             }
@@ -83,7 +83,7 @@ function getUserCoin(cointype){
             break;
         case "GRS":
             cantidad = prompt("Ingresar cantidad de Groestlcoin");
-            if (!parseInt(cantidad)){
+            if (!parseFloat(cantidad)){
                 alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
                 break
             }
