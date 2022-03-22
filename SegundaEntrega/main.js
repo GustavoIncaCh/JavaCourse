@@ -8,6 +8,11 @@ let cantidad                        // entrada de la cantidad de la moneda
 let usd = 0.0                       // variable de ayuda para transformar la cripto a dolar
 let usdTotal = 0.0                  // variable de ayuda sumar el total de nuestras criptomonedas en dolares 
 
+// funcion para alertar el error de entrada
+function invalidAlert(){
+    alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
+}
+
 /// funcion para recoger y convertir la moneda deseada
 function getUserCoin(cointype){
     switch (cointype){
@@ -16,8 +21,10 @@ function getUserCoin(cointype){
             /// de moneda por la valuacion de la criptomoneda: Ejem: 0.000058 BTC
             cantidad = prompt("Ingresar cantidad de Bitcoin");
             /// si el usuario ingreso un valor no Numerico, QUE NO SEA FRACCION
+            /// funciona tambien si el usuario ingresa 0, que es una cantidad nula
             if (!parseFloat(cantidad)){
-                alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
+                /// llamamos a nuestra funcion de alerta
+                invalidAlert()
                 break
             }
             /// transformamos el bitcoin a dolar
@@ -34,7 +41,7 @@ function getUserCoin(cointype){
         case "ETH":
             cantidad = prompt("Ingresar cantidad de Etherium");
             if (!parseFloat(cantidad)){
-                alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
+                invalidAlert()
                 break
             }
             usd = cantidad * 1784.11
@@ -44,7 +51,7 @@ function getUserCoin(cointype){
         case "DASH":
             cantidad = prompt("Ingresar cantidad de Dash");
             if (!parseFloat(cantidad)){
-                alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
+                invalidAlert()
                 break
             }
             usd = cantidad * 123.79
@@ -54,7 +61,7 @@ function getUserCoin(cointype){
         case "SYS":
             cantidad = prompt("Ingresar cantidad de Syscoin");
             if (!parseFloat(cantidad)){
-                alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
+                invalidAlert()
                 break
             }
             usd = cantidad * 0.58
@@ -64,7 +71,7 @@ function getUserCoin(cointype){
         case "FIL":
             cantidad = prompt("Ingresar cantidad de Filecoin");
             if (!parseFloat(cantidad)){
-                alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
+                invalidAlert()
                 break
             }
             usd = cantidad * 17.80
@@ -74,7 +81,7 @@ function getUserCoin(cointype){
         case "LTC":
             cantidad = prompt("Ingresar cantidad de Litecoin");
             if (!parseFloat(cantidad)){
-                alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
+                invalidAlert()
                 break
             }
             usd = cantidad * 116.33
@@ -84,7 +91,7 @@ function getUserCoin(cointype){
         case "GRS":
             cantidad = prompt("Ingresar cantidad de Groestlcoin");
             if (!parseFloat(cantidad)){
-                alert("Cantidad no validada!!!\nDebes ingresar una cantidad valida: Ejemplo: 0.5, 15, 0.0007")
+                invalidAlert()
                 break
             }
             usd = cantidad * 0.59
