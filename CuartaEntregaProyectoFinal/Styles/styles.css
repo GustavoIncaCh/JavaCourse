@@ -1,0 +1,225 @@
+/* All HTML elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(orange, red);
+}
+
+/*Container for */
+.current_deal{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1%;
+    color: green;
+}
+/* Main picture above the fold */
+.main_container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    display: inline-flex;
+    width: 100%;
+    background-color: black;
+    font-size: 1.4rem;
+    padding: 1%;
+}
+
+nav a {
+    width: 10%;
+    border-right: 1px solid green;
+    text-align: center;
+    color: white;
+    padding: 1%;
+    justify-content: center;
+}
+
+.main_pic {
+    height: 100vh;
+    max-height: 100%;
+    max-width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bodypic2 {}
+
+.main_text {
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    font-size: 1.8rem;
+}
+/* base button class */
+.btn {
+    position: absolute;
+    width: 10%;
+    padding: .5%;
+    background-color: white;
+    top: 15%;
+    left: 50%;
+    border-radius: 10%;
+    box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.abutton {
+    background-color: blue;
+    top: 16%;
+}
+
+.bbutton {
+    background-color: brown;
+    top: 20%;
+    left: 35%;
+}
+
+.btext {
+    top: 10%;
+    left: 35%;
+    color: cornsilk;
+    text-decoration: underline;
+}
+
+.cbutton {
+    background-color: skyblue;
+    top: 16%;
+}
+
+.ctext {
+    left: 40%;
+    color: yellow;
+    background-color: rgba(60, 100, 200, .80);
+}
+
+
+.slider_top {
+    width: 90%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+    margin-top: 1%;
+
+}
+
+.slider_top_item {
+    width: 30%;
+    margin: 0 .125%;
+    box-shadow: 10px 12px 8px .8px rgba(0, 0, 0, .7);
+
+}
+
+.slider_content {
+    position: relative;
+    text-align: center;
+
+}
+
+.slider_pic {
+    width: 100%;
+
+}
+.mid-section{
+    text-align: center;
+    justify-content: center;
+    margin: 1%;
+    padding: 2%;
+    font-size: 1.6rem;
+}
+
+.name,
+.catagory,
+.price {
+    font-size: 1.6rem;
+}
+.container_title{
+    margin: 1% 5%;
+    width: 90%;
+    text-align: center;
+}
+.second_container{
+    display: flex;
+    float: left;
+    width: 98%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 1%;
+    padding: 1%;
+} 
+
+.second_container_item{
+    width: 30%;
+    background-color: blue;
+    border: 3px solid black;
+}
+.second_container_content{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: red;
+}
+.second_container_pic{
+    max-width: 45%;
+    height: 45vh;
+}
+.text{
+    padding: 5%;
+}
+
+.button{
+    background-color: orange;
+    padding: 3%;
+    margin: 1% 0%;
+}
+
+.body_containers {
+    position: relative;
+    text-align: center;
+}
+
+.body_pics {
+    height: 50vh;
+}
+
+.body_pics .btn {
+    top: 2%;
+}
+
+.shoe_container{
+    display: grid;
+    grid-gap: 0%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    background: silver;
+    margin: 2%;
+}
+.shoe_container img{
+    width: 40vw;
+}
+
+footer {
+    background: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    height: 5vh;
+}
+
+@media screen and (max-width: 600px) {
+    .btn {
+        width: 50%;
+    }
+}
